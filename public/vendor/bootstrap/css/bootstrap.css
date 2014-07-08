@@ -3451,6 +3451,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  border-top: solid 20px #fff;
 }
 .nav > li {
   position: relative;
@@ -4368,7 +4369,7 @@ a.list-group-item.active > .badge,
   padding: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+  background-color: #95d5ff;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -4597,6 +4598,7 @@ a.thumbnail.active {
 .media > .pull-right {
   margin-left: 10px;
 }
+
 .media-list {
   padding-left: 0;
   list-style: none;
@@ -5643,6 +5645,9 @@ button.close {
 }
 .pull-right {
   float: right !important;
+}
+.pull-down {
+  float: bottom !important;
 }
 .pull-left {
   float: left !important;

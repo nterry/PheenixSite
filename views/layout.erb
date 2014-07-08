@@ -1,63 +1,50 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Sinatra + Twitter Bootstrap</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Bootstrap -->
-		<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<head>
+    <title>Sinatra + Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/jumbotron-narrow.css" rel="stylesheet">
 
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<div class="container">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <img src="/img/logo_main.png">
+    </div>
 
-			<!-- Static navbar -->
-			<div class="navbar navbar-default" role="navigation">
-			  <div class="navbar-header">
-			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-			      <span class="sr-only">Toggle navigation</span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
-			    </button>
-			    <a class="navbar-brand" href="/">Sinatra + Twitter Bootstrap</a>
-			  </div>
-			  <div class="navbar-collapse collapse">
-			    <ul class="nav navbar-nav">
-			      <li><a href="/secure/place">Secret</a></li>
-			    </ul>
-			    <ul class="nav navbar-nav navbar-right">
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%=username%> <b class="caret"></b></a>
-			        <ul class="dropdown-menu">
-			            <li><a href="/login/form">Login</a></li>
-			            <li class="divider"></li>
-			            <li><a href="/logout">Logout</a></li>
-			        </ul>
-			      </li>
-        
-			    </ul>
-			  </div><!--/.nav-collapse -->
-			</div>
+    <div>
+        <h1>Welcome!</h1>
+        <h5>
+            Pheenix is a group of developers dedicated to providing high-quality games to the masses! We pride ourselves in intricate coding techniques, blended with aestetically appealing graphical user interfaces and gameplay. The reason we started this group was because we felt that Hollywood had too much a hold on the gaming department. Take, for example, the Madden series. The whole game is repeated year-to-year, and there are few improvements, and yet, it SELLS OUT?!?!?!? There is seriously something wrong with that....
 
-			<div>
-			      <%if @error then %>
-			          <div class="alert alert-error"><%=@error%></div>
-			      <% end %>
-			      <%= yield %>
-			</div>
+            With that in mind, we formed this development group to provide quality independent games that are free from the corporate and political machine we call Hollywood. We hope to become well-known enough to overthrow this grip Hollywood has on us, so they follow our lead, not the other way around. I mean, there is a channel for independent movies, why not games?.
+        </h5>
+        <!--<p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>-->
+    </div>
 
-	</div>
+    <div class="footer">
+        <p>&copy; Pheenix Game Studios, LLC 2006-2014</p>
+    </div>
+
+</div>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/vendor/jquery-1.9.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-  </body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/vendor/jquery-1.9.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
 </html>
