@@ -27,6 +27,10 @@ get '/about' do
   erb :about
 end
 
+get '/projects' do
+  erb :projects
+end
+
 not_found do
   erb :notfound
 end
